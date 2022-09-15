@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C22741F328D3380500683444 /* CLLongPress#1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22741F228D3380500683444 /* CLLongPress#1.swift */; };
 		C28543C928D1EA72004E3AD1 /* ContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */; };
 		C28543CB28D1EA72004E3AD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28543CA28D1EA72004E3AD1 /* ContentView.swift */; };
 		C28543CD28D1EA73004E3AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28543CC28D1EA73004E3AD1 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C22741F228D3380500683444 /* CLLongPress#1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLongPress#1.swift"; sourceTree = "<group>"; };
 		C28543C528D1EA72004E3AD1 /* ContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuedLearningApp.swift; sourceTree = "<group>"; };
 		C28543CA28D1EA72004E3AD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */,
 				C28543CA28D1EA72004E3AD1 /* ContentView.swift */,
+				C22741F228D3380500683444 /* CLLongPress#1.swift */,
 				C28543CC28D1EA73004E3AD1 /* Assets.xcassets */,
 				C28543CE28D1EA73004E3AD1 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22741F328D3380500683444 /* CLLongPress#1.swift in Sources */,
 				C28543CB28D1EA72004E3AD1 /* ContentView.swift in Sources */,
 				C28543C928D1EA72004E3AD1 /* ContinuedLearningApp.swift in Sources */,
 			);
