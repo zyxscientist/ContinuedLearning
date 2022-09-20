@@ -15,6 +15,10 @@
 		C28543D028D1EA73004E3AD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28543CF28D1EA73004E3AD1 /* Preview Assets.xcassets */; };
 		C2D287A428D861C600342399 /* CLScrollViewReader#5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D287A328D861C600342399 /* CLScrollViewReader#5.swift */; };
 		C2D287A628D870E900342399 /* CLGeometryReader#6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D287A528D870E900342399 /* CLGeometryReader#6.swift */; };
+		C2DAB1EA28D9F02F00517791 /* CLHaptics#10.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DAB1E928D9F02E00517791 /* CLHaptics#10.swift */; };
+		C2DAB1ED28D9F59300517791 /* HapticFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DAB1EC28D9F59300517791 /* HapticFunc.swift */; };
+		C2DAB1EF28D9F8ED00517791 /* CLLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DAB1EE28D9F8ED00517791 /* CLLocalNotification.swift */; };
+		C2DAB1F228D9FBC900517791 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DAB1F128D9FBC900517791 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		C28543CF28D1EA73004E3AD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2D287A328D861C600342399 /* CLScrollViewReader#5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLScrollViewReader#5.swift"; sourceTree = "<group>"; };
 		C2D287A528D870E900342399 /* CLGeometryReader#6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLGeometryReader#6.swift"; sourceTree = "<group>"; };
+		C2DAB1E928D9F02E00517791 /* CLHaptics#10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLHaptics#10.swift"; sourceTree = "<group>"; };
+		C2DAB1EC28D9F59300517791 /* HapticFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFunc.swift; sourceTree = "<group>"; };
+		C2DAB1EE28D9F8ED00517791 /* CLLocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocalNotification.swift; sourceTree = "<group>"; };
+		C2DAB1F128D9FBC900517791 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,9 @@
 				C2D287A328D861C600342399 /* CLScrollViewReader#5.swift */,
 				C2D287A528D870E900342399 /* CLGeometryReader#6.swift */,
 				C2745EA028D8A12400B87565 /* CLMultipleSheets#7.swift */,
+				C2DAB1EE28D9F8ED00517791 /* CLLocalNotification.swift */,
+				C2DAB1E928D9F02E00517791 /* CLHaptics#10.swift */,
+				C2DAB1F028D9FB9E00517791 /* Singleton */,
 				C28543CC28D1EA73004E3AD1 /* Assets.xcassets */,
 				C28543CE28D1EA73004E3AD1 /* Preview Content */,
 			);
@@ -77,6 +88,15 @@
 				C28543CF28D1EA73004E3AD1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2DAB1F028D9FB9E00517791 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				C2DAB1EC28D9F59300517791 /* HapticFunc.swift */,
+				C2DAB1F128D9FBC900517791 /* NotificationManager.swift */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2DAB1EF28D9F8ED00517791 /* CLLocalNotification.swift in Sources */,
+				C2DAB1ED28D9F59300517791 /* HapticFunc.swift in Sources */,
+				C2DAB1F228D9FBC900517791 /* NotificationManager.swift in Sources */,
 				C22741F328D3380500683444 /* CLLongPress#1.swift in Sources */,
+				C2DAB1EA28D9F02F00517791 /* CLHaptics#10.swift in Sources */,
 				C2D287A428D861C600342399 /* CLScrollViewReader#5.swift in Sources */,
 				C2745EA128D8A12400B87565 /* CLMultipleSheets#7.swift in Sources */,
 				C28543CB28D1EA72004E3AD1 /* ContentView.swift in Sources */,
