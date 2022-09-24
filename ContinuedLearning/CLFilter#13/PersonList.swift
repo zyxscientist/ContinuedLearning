@@ -12,28 +12,35 @@ struct PersonList: View {
     @StateObject var vm: PersonViewModel = PersonViewModel()
     
     var body: some View {
-            List {
-                ForEach(vm.dataArray) { item in
-                    HStack {
-                        VStack(alignment:.leading) {
-                            Text(item.name)
-                                .font(.body)
-                                .fontWeight(.medium)
-                                .foregroundColor(.black)
-                            Text("\(item.points)")
-                                .font(.body)
-                                .foregroundColor(.gray)
-                        }
-                        
-                        Spacer()
-                        
-                        if item.isVerified {
-                            Image(systemName: "person.fill.checkmark")
-                                .foregroundColor(Color.blue)
-                        }
+        List {
+            ForEach(vm.dataArray) { item in
+                HStack {
+                    VStack(alignment:.leading) {
+                        Text(item.name)
+                            .font(.body)
+                            .fontWeight(.medium)
+                            .foregroundColor(.black)
+                        Text("\(item.points)")
+                            .font(.body)
+                            .foregroundColor(.gray)
+                    }
+                    
+                    Spacer()
+                    
+                    if item.isVerified {
+                        Image(systemName: "person.fill.checkmark")
+                            .foregroundColor(Color.blue)
                     }
                 }
             }
+        }
+        
+        // For Map
+        List {
+            ForEach(vm.mappedArray, id: \.self) { item in
+                Text(item)
+            }
+        }
     }
 }
 
