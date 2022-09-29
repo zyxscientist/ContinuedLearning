@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C22000A128E5CD8A00DF61CC /* CLCoreData15.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22000A028E5CD8A00DF61CC /* CLCoreData15.swift */; };
 		C22741F328D3380500683444 /* CLLongPress#1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22741F228D3380500683444 /* CLLongPress#1.swift */; };
 		C258564A28DC533500D5C698 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258564928DC533500D5C698 /* PersonModel.swift */; };
 		C258564C28DC539900D5C698 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258564B28DC539900D5C698 /* PersonViewModel.swift */; };
@@ -16,6 +17,7 @@
 		C28543CB28D1EA72004E3AD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28543CA28D1EA72004E3AD1 /* ContentView.swift */; };
 		C28543CD28D1EA73004E3AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28543CC28D1EA73004E3AD1 /* Assets.xcassets */; };
 		C28543D028D1EA73004E3AD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28543CF28D1EA73004E3AD1 /* Preview Assets.xcassets */; };
+		C297B25928E5D0A4006BDF17 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C297B25728E5D0A3006BDF17 /* FruitsContainer.xcdatamodeld */; };
 		C2D287A428D861C600342399 /* CLScrollViewReader#5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D287A328D861C600342399 /* CLScrollViewReader#5.swift */; };
 		C2D287A628D870E900342399 /* CLGeometryReader#6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D287A528D870E900342399 /* CLGeometryReader#6.swift */; };
 		C2DAB1EA28D9F02F00517791 /* CLHaptics#10.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DAB1E928D9F02E00517791 /* CLHaptics#10.swift */; };
@@ -25,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C22000A028E5CD8A00DF61CC /* CLCoreData15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCoreData15.swift; sourceTree = "<group>"; };
 		C22741F228D3380500683444 /* CLLongPress#1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLongPress#1.swift"; sourceTree = "<group>"; };
 		C258564928DC533500D5C698 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		C258564B28DC539900D5C698 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		C28543CA28D1EA72004E3AD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C28543CC28D1EA73004E3AD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28543CF28D1EA73004E3AD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C297B25828E5D0A3006BDF17 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 		C2D287A328D861C600342399 /* CLScrollViewReader#5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLScrollViewReader#5.swift"; sourceTree = "<group>"; };
 		C2D287A528D870E900342399 /* CLGeometryReader#6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLGeometryReader#6.swift"; sourceTree = "<group>"; };
 		C2DAB1E928D9F02E00517791 /* CLHaptics#10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLHaptics#10.swift"; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 		C28543C728D1EA72004E3AD1 /* ContinuedLearning */ = {
 			isa = PBXGroup;
 			children = (
+				C22000A028E5CD8A00DF61CC /* CLCoreData15.swift */,
+				C297B25728E5D0A3006BDF17 /* FruitsContainer.xcdatamodeld */,
 				C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */,
 				C28543CA28D1EA72004E3AD1 /* ContentView.swift */,
 				C22741F228D3380500683444 /* CLLongPress#1.swift */,
@@ -189,6 +195,7 @@
 				C2DAB1EF28D9F8ED00517791 /* CLLocalNotification.swift in Sources */,
 				C2DAB1ED28D9F59300517791 /* HapticFunc.swift in Sources */,
 				C258564A28DC533500D5C698 /* PersonModel.swift in Sources */,
+				C22000A128E5CD8A00DF61CC /* CLCoreData15.swift in Sources */,
 				C258564C28DC539900D5C698 /* PersonViewModel.swift in Sources */,
 				C2DAB1F228D9FBC900517791 /* NotificationManager.swift in Sources */,
 				C22741F328D3380500683444 /* CLLongPress#1.swift in Sources */,
@@ -197,6 +204,7 @@
 				C2745EA128D8A12400B87565 /* CLMultipleSheets#7.swift in Sources */,
 				C258564E28DC54CD00D5C698 /* PersonList.swift in Sources */,
 				C28543CB28D1EA72004E3AD1 /* ContentView.swift in Sources */,
+				C297B25928E5D0A4006BDF17 /* FruitsContainer.xcdatamodeld in Sources */,
 				C2D287A628D870E900342399 /* CLGeometryReader#6.swift in Sources */,
 				C28543C928D1EA72004E3AD1 /* ContinuedLearningApp.swift in Sources */,
 			);
@@ -399,6 +407,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C297B25728E5D0A3006BDF17 /* FruitsContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C297B25828E5D0A3006BDF17 /* FruitsContainer.xcdatamodel */,
+			);
+			currentVersion = C297B25828E5D0A3006BDF17 /* FruitsContainer.xcdatamodel */;
+			path = FruitsContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C28543BD28D1EA72004E3AD1 /* Project object */;
 }
