@@ -88,6 +88,7 @@ struct CLCoreData15: View {
                 .padding()
                 
                 List {
+                    // 将CoreData的数据显示出来
                     ForEach(vm.savedEntities){ fruits in
                         Text(fruits.name ?? "")
                     }
