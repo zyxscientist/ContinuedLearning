@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20C504428E98472006FEB1D /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C504328E98472006FEB1D /* FruitViewModel.swift */; };
 		C22000A128E5CD8A00DF61CC /* CLCoreData15.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22000A028E5CD8A00DF61CC /* CLCoreData15.swift */; };
 		C22741F328D3380500683444 /* CLLongPress#1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22741F228D3380500683444 /* CLLongPress#1.swift */; };
 		C258564A28DC533500D5C698 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258564928DC533500D5C698 /* PersonModel.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C20C504328E98472006FEB1D /* FruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModel.swift; sourceTree = "<group>"; };
 		C22000A028E5CD8A00DF61CC /* CLCoreData15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCoreData15.swift; sourceTree = "<group>"; };
 		C22741F228D3380500683444 /* CLLongPress#1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLongPress#1.swift"; sourceTree = "<group>"; };
 		C258564928DC533500D5C698 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
@@ -58,6 +60,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C20C504528E98498006FEB1D /* CLCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C20C504328E98472006FEB1D /* FruitViewModel.swift */,
+				C22000A028E5CD8A00DF61CC /* CLCoreData15.swift */,
+				C297B25728E5D0A3006BDF17 /* FruitsContainer.xcdatamodeld */,
+			);
+			path = CLCoreData;
+			sourceTree = "<group>";
+		};
 		C258564828DC52EF00D5C698 /* CLFilter#13 */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +99,7 @@
 		C28543C728D1EA72004E3AD1 /* ContinuedLearning */ = {
 			isa = PBXGroup;
 			children = (
-				C22000A028E5CD8A00DF61CC /* CLCoreData15.swift */,
-				C297B25728E5D0A3006BDF17 /* FruitsContainer.xcdatamodeld */,
+				C20C504528E98498006FEB1D /* CLCoreData */,
 				C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */,
 				C28543CA28D1EA72004E3AD1 /* ContentView.swift */,
 				C22741F228D3380500683444 /* CLLongPress#1.swift */,
@@ -197,6 +208,7 @@
 				C258564A28DC533500D5C698 /* PersonModel.swift in Sources */,
 				C22000A128E5CD8A00DF61CC /* CLCoreData15.swift in Sources */,
 				C258564C28DC539900D5C698 /* PersonViewModel.swift in Sources */,
+				C20C504428E98472006FEB1D /* FruitViewModel.swift in Sources */,
 				C2DAB1F228D9FBC900517791 /* NotificationManager.swift in Sources */,
 				C22741F328D3380500683444 /* CLLongPress#1.swift in Sources */,
 				C2DAB1EA28D9F02F00517791 /* CLHaptics#10.swift in Sources */,

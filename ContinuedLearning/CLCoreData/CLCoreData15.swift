@@ -6,53 +6,6 @@
 //
 
 import SwiftUI
-import CoreData
-
-class CoreDataViewModel: ObservableObject {
-    
-    // 数据库容器
-    let container: NSPersistentContainer
-    @Published var savedEntities:[FruitEntity] = []
-    
-    init(){
-        // 第一步：创建container并且连接到名为FruitsContainer的数据库
-        container = NSPersistentContainer(name: "FruitsContainer") // 写上创建的数据库的名字
-        container.loadPersistentStores { (description, error) in
-            if let error = error {
-                print("LOADING COREDATA ERROR: \(error)")
-            }
-        }
-        // 第二步：从里面调取目标数据
-        fetchFruits()
-    }
-    
-    // 获取目标数据
-    func fetchFruits(){
-        let request = NSFetchRequest<FruitEntity>(entityName: "FruitEntity")//调取对象
-        do {
-            savedEntities = try container.viewContext.fetch(request)
-        } catch let error {
-            print("Error fetching. \(error)")
-        }
-    }
-    
-    // 增加数据
-    func addFruit(name: String){
-        let newFruit = FruitEntity(context: container.viewContext)
-        newFruit.name = name
-        saveData()
-    }
-    
-    // 保存数据
-    func saveData(){
-        do{
-            try container.viewContext.save()
-            fetchFruits()
-        } catch let error {
-            print("Saving Error: \(error)")
-        }
-    }
-}
 
 struct CLCoreData15: View {
     
@@ -91,7 +44,10 @@ struct CLCoreData15: View {
                     // 将CoreData的数据显示出来
                     ForEach(vm.savedEntities){ fruits in
                         Text(fruits.name ?? "")
-                    }
+                            .onTapGesture {
+                                vm.updateFruit(entity: fruits)
+                            }
+                    }.onDelete(perform: vm.deleteFruit)
                 }
             }
         }
