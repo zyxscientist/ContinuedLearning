@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C20C504428E98472006FEB1D /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C504328E98472006FEB1D /* FruitViewModel.swift */; };
+		C20C504728E989ED006FEB1D /* CLCoreDataRelationship16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C504628E989ED006FEB1D /* CLCoreDataRelationship16.swift */; };
+		C20C504A28E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C20C504828E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld */; };
 		C22000A128E5CD8A00DF61CC /* CLCoreData15.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22000A028E5CD8A00DF61CC /* CLCoreData15.swift */; };
 		C22741F328D3380500683444 /* CLLongPress#1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22741F228D3380500683444 /* CLLongPress#1.swift */; };
 		C258564A28DC533500D5C698 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258564928DC533500D5C698 /* PersonModel.swift */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		C20C504328E98472006FEB1D /* FruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModel.swift; sourceTree = "<group>"; };
+		C20C504628E989ED006FEB1D /* CLCoreDataRelationship16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCoreDataRelationship16.swift; sourceTree = "<group>"; };
+		C20C504928E98BE3006FEB1D /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
 		C22000A028E5CD8A00DF61CC /* CLCoreData15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCoreData15.swift; sourceTree = "<group>"; };
 		C22741F228D3380500683444 /* CLLongPress#1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLongPress#1.swift"; sourceTree = "<group>"; };
 		C258564928DC533500D5C698 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 		C28543BC28D1EA72004E3AD1 = {
 			isa = PBXGroup;
 			children = (
+				C20C504628E989ED006FEB1D /* CLCoreDataRelationship16.swift */,
+				C20C504828E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld */,
 				C28543C728D1EA72004E3AD1 /* ContinuedLearning */,
 				C28543C628D1EA72004E3AD1 /* Products */,
 			);
@@ -206,6 +212,7 @@
 				C2DAB1EF28D9F8ED00517791 /* CLLocalNotification.swift in Sources */,
 				C2DAB1ED28D9F59300517791 /* HapticFunc.swift in Sources */,
 				C258564A28DC533500D5C698 /* PersonModel.swift in Sources */,
+				C20C504728E989ED006FEB1D /* CLCoreDataRelationship16.swift in Sources */,
 				C22000A128E5CD8A00DF61CC /* CLCoreData15.swift in Sources */,
 				C258564C28DC539900D5C698 /* PersonViewModel.swift in Sources */,
 				C20C504428E98472006FEB1D /* FruitViewModel.swift in Sources */,
@@ -214,6 +221,7 @@
 				C2DAB1EA28D9F02F00517791 /* CLHaptics#10.swift in Sources */,
 				C2D287A428D861C600342399 /* CLScrollViewReader#5.swift in Sources */,
 				C2745EA128D8A12400B87565 /* CLMultipleSheets#7.swift in Sources */,
+				C20C504A28E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld in Sources */,
 				C258564E28DC54CD00D5C698 /* PersonList.swift in Sources */,
 				C28543CB28D1EA72004E3AD1 /* ContentView.swift in Sources */,
 				C297B25928E5D0A4006BDF17 /* FruitsContainer.xcdatamodeld in Sources */,
@@ -355,6 +363,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,6 +393,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,6 +431,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		C20C504828E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C20C504928E98BE3006FEB1D /* CoreDataContainer.xcdatamodel */,
+			);
+			currentVersion = C20C504928E98BE3006FEB1D /* CoreDataContainer.xcdatamodel */;
+			path = CoreDataContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		C297B25728E5D0A3006BDF17 /* FruitsContainer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
