@@ -11,7 +11,7 @@ import SwiftUI
 struct ContinuedLearningApp: App {
     var body: some Scene {
         WindowGroup {
-            CLCoreData15()
+            CLCoreDataRelationship16()
         }
     }
 }
