@@ -87,8 +87,8 @@
 		C28543BC28D1EA72004E3AD1 = {
 			isa = PBXGroup;
 			children = (
-				C20C504628E989ED006FEB1D /* CLCoreDataRelationship16.swift */,
-				C20C504828E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld */,
+				C20C504528E98498006FEB1D /* CLCoreData */,
+				C2CB965E28F2F8BE002B86C0 /* CLCoreDataRelationship */,
 				C28543C728D1EA72004E3AD1 /* ContinuedLearning */,
 				C28543C628D1EA72004E3AD1 /* Products */,
 			);
@@ -105,7 +105,6 @@
 		C28543C728D1EA72004E3AD1 /* ContinuedLearning */ = {
 			isa = PBXGroup;
 			children = (
-				C20C504528E98498006FEB1D /* CLCoreData */,
 				C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */,
 				C28543CA28D1EA72004E3AD1 /* ContentView.swift */,
 				C22741F228D3380500683444 /* CLLongPress#1.swift */,
@@ -128,6 +127,15 @@
 				C28543CF28D1EA73004E3AD1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2CB965E28F2F8BE002B86C0 /* CLCoreDataRelationship */ = {
+			isa = PBXGroup;
+			children = (
+				C20C504628E989ED006FEB1D /* CLCoreDataRelationship16.swift */,
+				C20C504828E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld */,
+			);
+			path = CLCoreDataRelationship;
 			sourceTree = "<group>";
 		};
 		C2DAB1F028D9FB9E00517791 /* Singleton */ = {
