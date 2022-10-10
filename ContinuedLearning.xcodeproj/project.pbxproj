@@ -21,6 +21,7 @@
 		C28543CD28D1EA73004E3AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28543CC28D1EA73004E3AD1 /* Assets.xcassets */; };
 		C28543D028D1EA73004E3AD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28543CF28D1EA73004E3AD1 /* Preview Assets.xcassets */; };
 		C297B25928E5D0A4006BDF17 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C297B25728E5D0A3006BDF17 /* FruitsContainer.xcdatamodeld */; };
+		C2CB966028F44BFC002B86C0 /* CLBackgroundThread#17.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB965F28F44BFB002B86C0 /* CLBackgroundThread#17.swift */; };
 		C2D287A428D861C600342399 /* CLScrollViewReader#5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D287A328D861C600342399 /* CLScrollViewReader#5.swift */; };
 		C2D287A628D870E900342399 /* CLGeometryReader#6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D287A528D870E900342399 /* CLGeometryReader#6.swift */; };
 		C2DAB1EA28D9F02F00517791 /* CLHaptics#10.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DAB1E928D9F02E00517791 /* CLHaptics#10.swift */; };
@@ -45,6 +46,7 @@
 		C28543CC28D1EA73004E3AD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28543CF28D1EA73004E3AD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C297B25828E5D0A3006BDF17 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
+		C2CB965F28F44BFB002B86C0 /* CLBackgroundThread#17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLBackgroundThread#17.swift"; sourceTree = "<group>"; };
 		C2D287A328D861C600342399 /* CLScrollViewReader#5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLScrollViewReader#5.swift"; sourceTree = "<group>"; };
 		C2D287A528D870E900342399 /* CLGeometryReader#6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLGeometryReader#6.swift"; sourceTree = "<group>"; };
 		C2DAB1E928D9F02E00517791 /* CLHaptics#10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLHaptics#10.swift"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				C22741F228D3380500683444 /* CLLongPress#1.swift */,
 				C2D287A328D861C600342399 /* CLScrollViewReader#5.swift */,
 				C2D287A528D870E900342399 /* CLGeometryReader#6.swift */,
+				C2CB965F28F44BFB002B86C0 /* CLBackgroundThread#17.swift */,
 				C2745EA028D8A12400B87565 /* CLMultipleSheets#7.swift */,
 				C2DAB1EE28D9F8ED00517791 /* CLLocalNotification.swift */,
 				C258564828DC52EF00D5C698 /* CLFilter#13 */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2DAB1EF28D9F8ED00517791 /* CLLocalNotification.swift in Sources */,
+				C2CB966028F44BFC002B86C0 /* CLBackgroundThread#17.swift in Sources */,
 				C2DAB1ED28D9F59300517791 /* HapticFunc.swift in Sources */,
 				C258564A28DC533500D5C698 /* PersonModel.swift in Sources */,
 				C20C504728E989ED006FEB1D /* CLCoreDataRelationship16.swift in Sources */,
