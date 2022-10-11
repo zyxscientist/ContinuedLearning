@@ -16,10 +16,11 @@ class BackgroundThreadViewModel: ObservableObject {
     func fetchData(){
         
         // 不建议让后台进程能够直接影响前端UI，所以我们要加.main.async
-        DispatchQueue.global().async {
+        DispatchQueue.global(qos: .background).async {
             let newData = self.downloadData()
-            
-            // 要求改变UI的程序在主线程中进行
+            print("CHECK MAIN THREAD:\(Thread.isMainThread)")
+            print("CHECK CURRENT THREAD:\(Thread.current)")
+            // 明确要求改变UI的程序在主线程中进行
             DispatchQueue.main.async {
                 self.dataArray = newData
             }
@@ -46,7 +47,7 @@ struct CLBackgroundThread_17: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
+            LazyVStack(spacing: 20) {
                 Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
                     .font(.title)
                     .fontWeight(.bold)
