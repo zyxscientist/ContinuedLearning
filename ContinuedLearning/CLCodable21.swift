@@ -29,17 +29,21 @@ class CodableViewModel: ObservableObject {
         print(data) // 模拟从网上下下来未经任何处理的数据
         let jsonString = String(data: data, encoding: .utf8)
         print(jsonString ?? "ERROR") // 模拟String化的数据 */
+        
+        /* ----- 下面开始演示真正的解码 -----*/
         if
+            // 手动解码json ↓
+            // as？ 是向下转型的知识
             let localData = try? JSONSerialization.jsonObject(with: data),
-            let dictionary = localData as? [String:Any] {
-                let id = dictionary["id"] as! String
-                let name = dictionary["name"] as! String
-                let point = dictionary["point"] as! Int
-                let isPremium = dictionary["isPremium"] as! Bool
+            let dictionary = localData as? [String:Any],
+            let id = dictionary["id"] as? String,
+            let name = dictionary["name"] as? String,
+            let point = dictionary["point"] as? Int,
+            let isPremium = dictionary["isPremium"] as? Bool{
             
             let newCustomer = CustomerModel(id: id, name: name, point: point, isPremium: isPremium)
+            customer = newCustomer
         }
-        
     }
     
     func getJSONData() -> Data? {
