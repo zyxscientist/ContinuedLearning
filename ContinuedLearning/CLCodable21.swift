@@ -7,11 +7,29 @@
 
 import SwiftUI
 
-struct CustomerModel: Identifiable {
+// 解码一般用于下载
+struct CustomerModel: Identifiable, Codable {
     let id: String
     let name: String
     let point: Int
     let isPremium: Bool
+    
+    // 以下的解码代码范式几乎是 Xcode 一键提供的
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case point
+        case isPremium
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(String.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.point = try container.decode(Int.self, forKey: .point)
+        self.isPremium = try container.decode(Bool.self, forKey: .isPremium)
+    }
+    
 }
 
 class CodableViewModel: ObservableObject {
@@ -25,29 +43,38 @@ class CodableViewModel: ObservableObject {
     func getData(){
         
         guard let data = getJSONData() else { return }
+        do{
+            customer = try JSONDecoder().decode(CustomerModel.self, from: data)
+            print("DECODE SUCCESS")
+        } catch let error {
+            print("ERROR: \(error)")
+        }
+        
         /* print("JSON Data:")
         print(data) // 模拟从网上下下来未经任何处理的数据
         let jsonString = String(data: data, encoding: .utf8)
         print(jsonString ?? "ERROR") // 模拟String化的数据 */
         
-        /* ----- 下面开始演示真正的解码 -----*/
-        if
-            // 手动解码json ↓
-            // as？ 是向下转型的知识
-            let localData = try? JSONSerialization.jsonObject(with: data),
-            let dictionary = localData as? [String:Any],
-            let id = dictionary["id"] as? String,
-            let name = dictionary["name"] as? String,
-            let point = dictionary["point"] as? Int,
-            let isPremium = dictionary["isPremium"] as? Bool{
-            
-            let newCustomer = CustomerModel(id: id, name: name, point: point, isPremium: isPremium)
-            customer = newCustomer
-        }
+        /* ----- 下面开始演示手动的解码 -----*/
+//        if
+//            // 手动解码json ↓
+//            // as？ 是向下转型的知识
+//            let localData = try? JSONSerialization.jsonObject(with: data),
+//            let dictionary = localData as? [String:Any],
+//            let id = dictionary["id"] as? String,
+//            let name = dictionary["name"] as? String,
+//            let point = dictionary["point"] as? Int,
+//            let isPremium = dictionary["isPremium"] as? Bool{
+//
+//            let newCustomer = CustomerModel(id: id, name: name, point: point, isPremium: isPremium)
+//            customer = newCustomer
+//        }
     }
     
+    
     func getJSONData() -> Data? {
-        // 假数据
+        
+        // 假数据，模拟从网上下载了一个用户的数据
         let dictionary: [String:Any] = [
             "id": "1234",
             "name": "Peter",
