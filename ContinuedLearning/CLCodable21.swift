@@ -15,20 +15,35 @@ struct CustomerModel: Identifiable, Codable {
     let isPremium: Bool
     
     // 以下的解码代码范式几乎是 Xcode 一键提供的
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case point
-        case isPremium
-    }
+//    enum CodingKeys: String, CodingKey {
+//        case id
+//        case name
+//        case point
+//        case isPremium
+//    }
     
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try container.decode(String.self, forKey: .id)
-        self.name = try container.decode(String.self, forKey: .name)
-        self.point = try container.decode(Int.self, forKey: .point)
-        self.isPremium = try container.decode(Bool.self, forKey: .isPremium)
-    }
+//    init(id: String, name: String, point: Int, isPremium: Bool) {
+//        self.id = id
+//        self.name = name
+//        self.point = point
+//        self.isPremium = isPremium
+//    }
+    
+//    init(from decoder: Decoder) throws {
+//        let container = try decoder.container(keyedBy: CodingKeys.self)
+//        self.id = try container.decode(String.self, forKey: .id)
+//        self.name = try container.decode(String.self, forKey: .name)
+//        self.point = try container.decode(Int.self, forKey: .point)
+//        self.isPremium = try container.decode(Bool.self, forKey: .isPremium)
+//    }
+//
+//    func encode(to encoder: Encoder) throws {
+//        var container = encoder.container(keyedBy: CodingKeys.self)
+//        try container.encode(self.id, forKey: .id)
+//        try container.encode(self.name, forKey: .name)
+//        try container.encode(self.point, forKey: .point)
+//        try container.encode(self.isPremium, forKey: .isPremium)
+//    }
     
 }
 
@@ -75,16 +90,20 @@ class CodableViewModel: ObservableObject {
     func getJSONData() -> Data? {
         
         // 假数据，模拟从网上下载了一个用户的数据
-        let dictionary: [String:Any] = [
-            "id": "1234",
-            "name": "Peter",
-            "point": 5,
-            "isPremium": true
-        ]
-        
-        // 将上面的假数据转换成JSON格式
-        let jsonData = try? JSONSerialization.data(withJSONObject: dictionary, options: [])
+        let customer = CustomerModel(id: "1234", name: "John", point: 22, isPremium: true)
+        let jsonData = try? JSONEncoder().encode(customer)
         return jsonData
+        
+//        let dictionary: [String:Any] = [
+//            "id": "1234",
+//            "name": "Peter",
+//            "point": 5,
+//            "isPremium": true
+//        ]
+//
+//        // 将上面的假数据转换成JSON格式，也就是Encode
+//        let jsonData = try? JSONSerialization.data(withJSONObject: dictionary, options: [])
+        
     }
     
 }
