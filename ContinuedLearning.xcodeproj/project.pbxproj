@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20305C028FA93D000CEED74 /* DownloadJSONFromAPI22.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20305BF28FA93D000CEED74 /* DownloadJSONFromAPI22.swift */; };
 		C20C504428E98472006FEB1D /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C504328E98472006FEB1D /* FruitViewModel.swift */; };
 		C20C504728E989ED006FEB1D /* CLCoreDataRelationship16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C504628E989ED006FEB1D /* CLCoreDataRelationship16.swift */; };
 		C20C504A28E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C20C504828E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C20305BF28FA93D000CEED74 /* DownloadJSONFromAPI22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadJSONFromAPI22.swift; sourceTree = "<group>"; };
 		C20C504328E98472006FEB1D /* FruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModel.swift; sourceTree = "<group>"; };
 		C20C504628E989ED006FEB1D /* CLCoreDataRelationship16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCoreDataRelationship16.swift; sourceTree = "<group>"; };
 		C20C504928E98BE3006FEB1D /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		C28543BC28D1EA72004E3AD1 = {
 			isa = PBXGroup;
 			children = (
+				C20305BF28FA93D000CEED74 /* DownloadJSONFromAPI22.swift */,
 				C20C504528E98498006FEB1D /* CLCoreData */,
 				C2CB965E28F2F8BE002B86C0 /* CLCoreDataRelationship */,
 				C28543C728D1EA72004E3AD1 /* ContinuedLearning */,
@@ -240,6 +243,7 @@
 				C258564E28DC54CD00D5C698 /* PersonList.swift in Sources */,
 				C28543CB28D1EA72004E3AD1 /* ContentView.swift in Sources */,
 				C20E714428F6AB3200687AC9 /* CLCodable21.swift in Sources */,
+				C20305C028FA93D000CEED74 /* DownloadJSONFromAPI22.swift in Sources */,
 				C297B25928E5D0A4006BDF17 /* FruitsContainer.xcdatamodeld in Sources */,
 				C2D287A628D870E900342399 /* CLGeometryReader#6.swift in Sources */,
 				C28543C928D1EA72004E3AD1 /* ContinuedLearningApp.swift in Sources */,
