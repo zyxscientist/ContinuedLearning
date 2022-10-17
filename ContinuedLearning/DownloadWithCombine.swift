@@ -60,15 +60,18 @@ struct DownloadWithCombine: View {
     @StateObject var vm = DownloadWithCombineViewModel()
     
     var body: some View {
-        List{
-            ForEach(vm.article) { article in
-                LazyVStack(alignment: .leading) {
-                    Text(article.title)
-                        .font(.headline)
-                    Text(article.body)
-                        .foregroundColor(.gray)
+        NavigationView {
+            List{
+                NavigationLink("HH", destination: Text("11"))
+                ForEach(vm.article) { article in
+                        LazyVStack(alignment: .leading) {
+                            Text(article.title)
+                                .font(.headline)
+                            Text(article.body)
+                                .foregroundColor(.gray)
+                        }
                 }
-            }
+            }.navigationTitle("1111")
         }
     }
 }
