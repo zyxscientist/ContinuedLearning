@@ -18,6 +18,7 @@
 		C258564A28DC533500D5C698 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258564928DC533500D5C698 /* PersonModel.swift */; };
 		C258564C28DC539900D5C698 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258564B28DC539900D5C698 /* PersonViewModel.swift */; };
 		C258564E28DC54CD00D5C698 /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258564D28DC54CD00D5C698 /* PersonList.swift */; };
+		C2697F2328FEDBB900F6C57F /* CLTimerAndonReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2697F2228FEDBB900F6C57F /* CLTimerAndonReceive.swift */; };
 		C2745EA128D8A12400B87565 /* CLMultipleSheets#7.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2745EA028D8A12400B87565 /* CLMultipleSheets#7.swift */; };
 		C28543C928D1EA72004E3AD1 /* ContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */; };
 		C28543CB28D1EA72004E3AD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28543CA28D1EA72004E3AD1 /* ContentView.swift */; };
@@ -45,6 +46,7 @@
 		C258564928DC533500D5C698 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		C258564B28DC539900D5C698 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 		C258564D28DC54CD00D5C698 /* PersonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList.swift; sourceTree = "<group>"; };
+		C2697F2228FEDBB900F6C57F /* CLTimerAndonReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTimerAndonReceive.swift; sourceTree = "<group>"; };
 		C2745EA028D8A12400B87565 /* CLMultipleSheets#7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLMultipleSheets#7.swift"; sourceTree = "<group>"; };
 		C28543C528D1EA72004E3AD1 /* ContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuedLearningApp.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */,
 				C20305C128FBE62300CEED74 /* DownloadWithCombine.swift */,
+				C2697F2228FEDBB900F6C57F /* CLTimerAndonReceive.swift */,
 				C28543CA28D1EA72004E3AD1 /* ContentView.swift */,
 				C22741F228D3380500683444 /* CLLongPress#1.swift */,
 				C2D287A328D861C600342399 /* CLScrollViewReader#5.swift */,
@@ -234,6 +237,7 @@
 				C2DAB1ED28D9F59300517791 /* HapticFunc.swift in Sources */,
 				C20305C228FBE62300CEED74 /* DownloadWithCombine.swift in Sources */,
 				C258564A28DC533500D5C698 /* PersonModel.swift in Sources */,
+				C2697F2328FEDBB900F6C57F /* CLTimerAndonReceive.swift in Sources */,
 				C20C504728E989ED006FEB1D /* CLCoreDataRelationship16.swift in Sources */,
 				C22000A128E5CD8A00DF61CC /* CLCoreData15.swift in Sources */,
 				C258564C28DC539900D5C698 /* PersonViewModel.swift in Sources */,
