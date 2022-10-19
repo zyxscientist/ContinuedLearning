@@ -13,13 +13,15 @@ struct CLTimerAndonReceive: View {
     
     @State var currentDate: Date = Date()
     
-    // 系统提供的一个渐变格式化器
+    // 系统提供的一个简便的格式化器
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         // formatter.dateStyle = .medium
-        formatter.timeStyle = .medium
+        formatter.dateFormat = "hh:mm:ss"
+        formatter.timeZone = TimeZone(identifier:"Asia/Chongqing")
         return formatter
     }
+    
     
     
     
