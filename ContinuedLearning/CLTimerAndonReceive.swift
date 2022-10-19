@@ -12,7 +12,7 @@ struct CLTimerAndonReceive: View {
     let timer = Timer.publish(every: 1.0, on: .main, in: .default).autoconnect()
     
     @State var currentDate: Date = Date()
-    
+
     // 系统提供的一个简便的格式化器
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
@@ -21,8 +21,6 @@ struct CLTimerAndonReceive: View {
         formatter.timeZone = TimeZone(identifier:"Asia/Chongqing")
         return formatter
     }
-    
-    
     
     
     var body: some View {
