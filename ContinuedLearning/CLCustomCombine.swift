@@ -27,13 +27,18 @@ class SubscriberViewModel: ObservableObject {
     // 利用Combine的接收特性来做一个校验输入框合法性的功能
     func textFieldTextSubscriber() {
         $textFieldText
+            /* debounce用作控制更新时间，指0.5秒之后再执行下方map函数，
+            如果不这样的话可能会造成大量的算力浪费 */
+            .debounce(for: .seconds(0.5), scheduler: RunLoop.main)
             .map { (text) -> Bool in
-                if text.count > 3 {
+                if text.count > 0 {
                     return true
                 }
                 return false
             }
-            .assign(to: \.textIsValid, on: self)
+            .sink(receiveValue: { [weak self] (isValid) in
+                self?.textIsValid = isValid
+            })
             // 没弄懂为什么不写下面这样就不生效？我们可以做点实验
             .store(in: &cancellables)
     }
@@ -74,6 +79,20 @@ struct CLCustomCombine: View {
                 .background(.gray.opacity(0.2))
                 .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous))
                 .padding()
+                .overlay(
+                    ZStack {
+                        Image(systemName: "xmark")
+                            .foregroundColor(.red)
+                            .opacity( vm.textIsValid && vm.textFieldText.count < 3 ? 1.0 : 0.0)
+                        Image(systemName: "checkmark")
+                            .foregroundColor(.green)
+                            .opacity(vm.textIsValid && vm.textFieldText.count > 3 ? 1.0 : 0.0)
+                    }
+                    .font(.title)
+                    .padding(.trailing)
+                    .padding()
+                    , alignment: .trailing
+                )
                 
         }
     }
