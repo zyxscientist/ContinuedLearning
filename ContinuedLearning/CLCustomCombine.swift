@@ -29,7 +29,7 @@ class SubscriberViewModel: ObservableObject {
         $textFieldText
             /* debounce用作控制更新时间，指0.5秒之后再执行下方map函数，
             如果不这样的话可能会造成大量的算力浪费 */
-            .debounce(for: .seconds(0.5), scheduler: RunLoop.main)
+            .debounce(for: .seconds(1), scheduler: RunLoop.main)
             .map { (text) -> Bool in
                 if text.count > 0 {
                     return true
@@ -83,7 +83,7 @@ struct CLCustomCombine: View {
                     ZStack {
                         Image(systemName: "xmark")
                             .foregroundColor(.red)
-                            .opacity( vm.textIsValid && vm.textFieldText.count < 3 ? 1.0 : 0.0)
+                            .opacity( vm.textIsValid && vm.textFieldText.count <= 3 ? 1.0 : 0.0)
                         Image(systemName: "checkmark")
                             .foregroundColor(.green)
                             .opacity(vm.textIsValid && vm.textFieldText.count > 3 ? 1.0 : 0.0)
