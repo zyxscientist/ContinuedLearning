@@ -33,6 +33,7 @@
 		C2DAB1ED28D9F59300517791 /* HapticFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DAB1EC28D9F59300517791 /* HapticFunc.swift */; };
 		C2DAB1EF28D9F8ED00517791 /* CLLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DAB1EE28D9F8ED00517791 /* CLLocalNotification.swift */; };
 		C2DAB1F228D9FBC900517791 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DAB1F128D9FBC900517791 /* NotificationManager.swift */; };
+		C2E71460292271CE00D4CA97 /* HighLightBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7145F292271CE00D4CA97 /* HighLightBorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		C2DAB1EC28D9F59300517791 /* HapticFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFunc.swift; sourceTree = "<group>"; };
 		C2DAB1EE28D9F8ED00517791 /* CLLocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocalNotification.swift; sourceTree = "<group>"; };
 		C2DAB1F128D9FBC900517791 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		C2E7145F292271CE00D4CA97 /* HighLightBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighLightBorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				C20305C128FBE62300CEED74 /* DownloadWithCombine.swift */,
 				C20305BF28FA93D000CEED74 /* DownloadJSONFromAPI22.swift */,
 				C2C98971290185F40075590D /* CLCustomCombine.swift */,
+				C2E7145F292271CE00D4CA97 /* HighLightBorderButton.swift */,
 				C2697F2228FEDBB900F6C57F /* CLTimerAndonReceive.swift */,
 				C28543CA28D1EA72004E3AD1 /* ContentView.swift */,
 				C22741F228D3380500683444 /* CLLongPress#1.swift */,
@@ -254,6 +257,7 @@
 				C20C504A28E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld in Sources */,
 				C258564E28DC54CD00D5C698 /* PersonList.swift in Sources */,
 				C28543CB28D1EA72004E3AD1 /* ContentView.swift in Sources */,
+				C2E71460292271CE00D4CA97 /* HighLightBorderButton.swift in Sources */,
 				C20E714428F6AB3200687AC9 /* CLCodable21.swift in Sources */,
 				C20305C028FA93D000CEED74 /* DownloadJSONFromAPI22.swift in Sources */,
 				C297B25928E5D0A4006BDF17 /* FruitsContainer.xcdatamodeld in Sources */,
