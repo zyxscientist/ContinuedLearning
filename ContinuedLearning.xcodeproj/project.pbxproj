@@ -20,6 +20,8 @@
 		C258564E28DC54CD00D5C698 /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258564D28DC54CD00D5C698 /* PersonList.swift */; };
 		C2697F2328FEDBB900F6C57F /* CLTimerAndonReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2697F2228FEDBB900F6C57F /* CLTimerAndonReceive.swift */; };
 		C2745EA128D8A12400B87565 /* CLMultipleSheets#7.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2745EA028D8A12400B87565 /* CLMultipleSheets#7.swift */; };
+		C27F312329C8499400C4A595 /* AppleMusicTabviewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F312229C8499400C4A595 /* AppleMusicTabviewSheet.swift */; };
+		C27F312A29C84FAA00C4A595 /* CustomFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F312929C84FAA00C4A595 /* CustomFontModifier.swift */; };
 		C28543C928D1EA72004E3AD1 /* ContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */; };
 		C28543CB28D1EA72004E3AD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28543CA28D1EA72004E3AD1 /* ContentView.swift */; };
 		C28543CD28D1EA73004E3AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28543CC28D1EA73004E3AD1 /* Assets.xcassets */; };
@@ -50,6 +52,9 @@
 		C258564D28DC54CD00D5C698 /* PersonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList.swift; sourceTree = "<group>"; };
 		C2697F2228FEDBB900F6C57F /* CLTimerAndonReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTimerAndonReceive.swift; sourceTree = "<group>"; };
 		C2745EA028D8A12400B87565 /* CLMultipleSheets#7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLMultipleSheets#7.swift"; sourceTree = "<group>"; };
+		C27F312229C8499400C4A595 /* AppleMusicTabviewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicTabviewSheet.swift; sourceTree = "<group>"; };
+		C27F312429C84E5300C4A595 /* PlusJakartaSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		C27F312929C84FAA00C4A595 /* CustomFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontModifier.swift; sourceTree = "<group>"; };
 		C28543C528D1EA72004E3AD1 /* ContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuedLearningApp.swift; sourceTree = "<group>"; };
 		C28543CA28D1EA72004E3AD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,9 +103,27 @@
 			path = "CLFilter#13";
 			sourceTree = "<group>";
 		};
+		C27F312529C84E6D00C4A595 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C27F312429C84E5300C4A595 /* PlusJakartaSans-VariableFont_wght.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C27F312B29C84FB500C4A595 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				C27F312929C84FAA00C4A595 /* CustomFontModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		C28543BC28D1EA72004E3AD1 = {
 			isa = PBXGroup;
 			children = (
+				C27F312B29C84FB500C4A595 /* Modifier */,
+				C27F312529C84E6D00C4A595 /* Font */,
 				C20C504528E98498006FEB1D /* CLCoreData */,
 				C2CB965E28F2F8BE002B86C0 /* CLCoreDataRelationship */,
 				C28543C728D1EA72004E3AD1 /* ContinuedLearning */,
@@ -119,6 +142,7 @@
 		C28543C728D1EA72004E3AD1 /* ContinuedLearning */ = {
 			isa = PBXGroup;
 			children = (
+				C27F312229C8499400C4A595 /* AppleMusicTabviewSheet.swift */,
 				C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */,
 				C20305C128FBE62300CEED74 /* DownloadWithCombine.swift */,
 				C20305BF28FA93D000CEED74 /* DownloadJSONFromAPI22.swift */,
@@ -243,8 +267,10 @@
 				C2DAB1ED28D9F59300517791 /* HapticFunc.swift in Sources */,
 				C20305C228FBE62300CEED74 /* DownloadWithCombine.swift in Sources */,
 				C258564A28DC533500D5C698 /* PersonModel.swift in Sources */,
+				C27F312A29C84FAA00C4A595 /* CustomFontModifier.swift in Sources */,
 				C2697F2328FEDBB900F6C57F /* CLTimerAndonReceive.swift in Sources */,
 				C20C504728E989ED006FEB1D /* CLCoreDataRelationship16.swift in Sources */,
+				C27F312329C8499400C4A595 /* AppleMusicTabviewSheet.swift in Sources */,
 				C2C98972290185F40075590D /* CLCustomCombine.swift in Sources */,
 				C22000A128E5CD8A00DF61CC /* CLCoreData15.swift in Sources */,
 				C258564C28DC539900D5C698 /* PersonViewModel.swift in Sources */,
@@ -394,6 +420,7 @@
 				DEVELOPMENT_TEAM = S5458AA7DS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContinuedLearning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -424,6 +451,7 @@
 				DEVELOPMENT_TEAM = S5458AA7DS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContinuedLearning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
