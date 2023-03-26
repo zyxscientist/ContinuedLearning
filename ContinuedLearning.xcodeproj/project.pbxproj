@@ -27,6 +27,7 @@
 		C28543CD28D1EA73004E3AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28543CC28D1EA73004E3AD1 /* Assets.xcassets */; };
 		C28543D028D1EA73004E3AD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28543CF28D1EA73004E3AD1 /* Preview Assets.xcassets */; };
 		C297B25928E5D0A4006BDF17 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C297B25728E5D0A3006BDF17 /* FruitsContainer.xcdatamodeld */; };
+		C2C806CD29CFF99000586199 /* ExpandBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C806CC29CFF99000586199 /* ExpandBottomSheet.swift */; };
 		C2C98972290185F40075590D /* CLCustomCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C98971290185F40075590D /* CLCustomCombine.swift */; };
 		C2CB966028F44BFC002B86C0 /* CLBackgroundThread#17.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB965F28F44BFB002B86C0 /* CLBackgroundThread#17.swift */; };
 		C2D287A428D861C600342399 /* CLScrollViewReader#5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D287A328D861C600342399 /* CLScrollViewReader#5.swift */; };
@@ -61,6 +62,7 @@
 		C28543CC28D1EA73004E3AD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28543CF28D1EA73004E3AD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C297B25828E5D0A3006BDF17 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
+		C2C806CC29CFF99000586199 /* ExpandBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandBottomSheet.swift; sourceTree = "<group>"; };
 		C2C98971290185F40075590D /* CLCustomCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCustomCombine.swift; sourceTree = "<group>"; };
 		C2CB965F28F44BFB002B86C0 /* CLBackgroundThread#17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLBackgroundThread#17.swift"; sourceTree = "<group>"; };
 		C2D287A328D861C600342399 /* CLScrollViewReader#5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLScrollViewReader#5.swift"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				C27F312229C8499400C4A595 /* AppleMusicTabviewSheet.swift */,
+				C2C806CC29CFF99000586199 /* ExpandBottomSheet.swift */,
 				C28543C828D1EA72004E3AD1 /* ContinuedLearningApp.swift */,
 				C20305C128FBE62300CEED74 /* DownloadWithCombine.swift */,
 				C20305BF28FA93D000CEED74 /* DownloadJSONFromAPI22.swift */,
@@ -274,6 +277,7 @@
 				C2C98972290185F40075590D /* CLCustomCombine.swift in Sources */,
 				C22000A128E5CD8A00DF61CC /* CLCoreData15.swift in Sources */,
 				C258564C28DC539900D5C698 /* PersonViewModel.swift in Sources */,
+				C2C806CD29CFF99000586199 /* ExpandBottomSheet.swift in Sources */,
 				C20C504428E98472006FEB1D /* FruitViewModel.swift in Sources */,
 				C2DAB1F228D9FBC900517791 /* NotificationManager.swift in Sources */,
 				C22741F328D3380500683444 /* CLLongPress#1.swift in Sources */,

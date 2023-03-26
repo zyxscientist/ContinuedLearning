@@ -69,7 +69,6 @@ struct CLCustomCombine: View {
     var body: some View {
         VStack {
             Text("\(vm.count)")
-                .font(.title)
             
             Text(vm.textIsValid.description)
             
