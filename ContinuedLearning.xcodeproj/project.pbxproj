@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		C20305C028FA93D000CEED74 /* DownloadJSONFromAPI22.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20305BF28FA93D000CEED74 /* DownloadJSONFromAPI22.swift */; };
 		C20305C228FBE62300CEED74 /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20305C128FBE62300CEED74 /* DownloadWithCombine.swift */; };
+		C20BEB8E29D0483000110F3C /* ViewBuilderLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20BEB8D29D0483000110F3C /* ViewBuilderLearning.swift */; };
 		C20C504428E98472006FEB1D /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C504328E98472006FEB1D /* FruitViewModel.swift */; };
 		C20C504728E989ED006FEB1D /* CLCoreDataRelationship16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C504628E989ED006FEB1D /* CLCoreDataRelationship16.swift */; };
 		C20C504A28E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C20C504828E98BE3006FEB1D /* CoreDataContainer.xcdatamodeld */; };
+		C20D52AE29D0272900A5BDF3 /* GeometryReaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D52AD29D0272900A5BDF3 /* GeometryReaderTest.swift */; };
 		C20E714428F6AB3200687AC9 /* CLCodable21.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20E714328F6AB3200687AC9 /* CLCodable21.swift */; };
 		C22000A128E5CD8A00DF61CC /* CLCoreData15.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22000A028E5CD8A00DF61CC /* CLCoreData15.swift */; };
 		C22741F328D3380500683444 /* CLLongPress#1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22741F228D3380500683444 /* CLLongPress#1.swift */; };
@@ -42,9 +44,11 @@
 /* Begin PBXFileReference section */
 		C20305BF28FA93D000CEED74 /* DownloadJSONFromAPI22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadJSONFromAPI22.swift; sourceTree = "<group>"; };
 		C20305C128FBE62300CEED74 /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
+		C20BEB8D29D0483000110F3C /* ViewBuilderLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderLearning.swift; sourceTree = "<group>"; };
 		C20C504328E98472006FEB1D /* FruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModel.swift; sourceTree = "<group>"; };
 		C20C504628E989ED006FEB1D /* CLCoreDataRelationship16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCoreDataRelationship16.swift; sourceTree = "<group>"; };
 		C20C504928E98BE3006FEB1D /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
+		C20D52AD29D0272900A5BDF3 /* GeometryReaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderTest.swift; sourceTree = "<group>"; };
 		C20E714328F6AB3200687AC9 /* CLCodable21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCodable21.swift; sourceTree = "<group>"; };
 		C22000A028E5CD8A00DF61CC /* CLCoreData15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCoreData15.swift; sourceTree = "<group>"; };
 		C22741F228D3380500683444 /* CLLongPress#1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLongPress#1.swift"; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				C2DAB1F028D9FB9E00517791 /* Singleton */,
 				C28543CC28D1EA73004E3AD1 /* Assets.xcassets */,
 				C28543CE28D1EA73004E3AD1 /* Preview Content */,
+				C20D52AD29D0272900A5BDF3 /* GeometryReaderTest.swift */,
+				C20BEB8D29D0483000110F3C /* ViewBuilderLearning.swift */,
 			);
 			path = ContinuedLearning;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 				C27F312A29C84FAA00C4A595 /* CustomFontModifier.swift in Sources */,
 				C2697F2328FEDBB900F6C57F /* CLTimerAndonReceive.swift in Sources */,
 				C20C504728E989ED006FEB1D /* CLCoreDataRelationship16.swift in Sources */,
+				C20BEB8E29D0483000110F3C /* ViewBuilderLearning.swift in Sources */,
 				C27F312329C8499400C4A595 /* AppleMusicTabviewSheet.swift in Sources */,
 				C2C98972290185F40075590D /* CLCustomCombine.swift in Sources */,
 				C22000A128E5CD8A00DF61CC /* CLCoreData15.swift in Sources */,
@@ -291,6 +298,7 @@
 				C20E714428F6AB3200687AC9 /* CLCodable21.swift in Sources */,
 				C20305C028FA93D000CEED74 /* DownloadJSONFromAPI22.swift in Sources */,
 				C297B25928E5D0A4006BDF17 /* FruitsContainer.xcdatamodeld in Sources */,
+				C20D52AE29D0272900A5BDF3 /* GeometryReaderTest.swift in Sources */,
 				C2D287A628D870E900342399 /* CLGeometryReader#6.swift in Sources */,
 				C28543C928D1EA72004E3AD1 /* ContinuedLearningApp.swift in Sources */,
 			);
