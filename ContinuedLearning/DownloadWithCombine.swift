@@ -30,10 +30,10 @@ class DownloadWithCombineViewModel: ObservableObject {
         URLSession.shared.dataTaskPublisher(for: url)
             // 表明接受后要在主线程更新
             .receive(on: DispatchQueue.main)
-            // 检查错误，处理错误
+            // 检查服务器返回的状态码，根据状态码对应具体错误，且如果有错误就跳出，不返回 data
             .tryMap { (data, response) -> Data in
                 guard
-                    let response  = response as? HTTPURLResponse,
+                    let response  = response as? HTTPURLResponse, // , 是guard语法的一部分连续俩条件可以用,链接起来
                     response.statusCode >= 200 && response.statusCode < 300 else
                 {
                     throw URLError(.badServerResponse)
