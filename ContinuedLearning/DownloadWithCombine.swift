@@ -42,7 +42,7 @@ class DownloadWithCombineViewModel: ObservableObject {
             }
             // 解码
             .decode(type: [ArticleModel].self, decoder: JSONDecoder())
-            // 赋值
+            // 接收publisher发出的值，直到它不在发送新值
             .sink { (completion) in
                 print("COMPLETION: \(completion)")
             } receiveValue: { [weak self] (returnedArticle) in
